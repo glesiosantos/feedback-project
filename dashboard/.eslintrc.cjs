@@ -12,7 +12,6 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    'no-unde': 'off',
     'vue/multi-word-component-names': 'off'
   }
 }
