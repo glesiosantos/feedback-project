@@ -1,5 +1,4 @@
 <script setup></script>
-
 <template>
-  <router-view />
+  <h1>Feedback</h1>
 </template>
