@@ -6,7 +6,6 @@ import palette from './palette'
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: palette
@@ -21,10 +20,9 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: colors.gray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
