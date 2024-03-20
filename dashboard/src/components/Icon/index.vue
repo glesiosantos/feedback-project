@@ -1,8 +1,8 @@
 <script>
 import Loading from './Loading.vue'
 export default {
+  components: { Loading },
   props: {
-    components: { Loading },
     name: { type: String, required: true }
   }
 }
