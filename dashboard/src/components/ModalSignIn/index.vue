@@ -7,7 +7,10 @@ import useModal from '@/hooks/use_modal'
 import { validateEmptyAndEmail, validateEmptyAndLength3 } from '@/utils/validator'
 import services from '@/services'
 
+import Icon from '@/components/Icon/index.vue'
+
 export default {
+  components: { Icon },
   setup() {
     const toast = useToast()
     const modal = useModal()
@@ -117,7 +120,8 @@ export default {
         :class="{ 'opacity-50': !!state.isLoading }"
         class="px-8 py-3 mt-10 font-bold text-white rounded-full bg-brand-main focus:outline-none transition-all duration-150"
       >
-        Entrar
+        <Icon v-if="state.isLoading" name="loading" class="animate-spin" />
+        <span v-else>Entrar</span>
       </button>
     </form>
   </div>
